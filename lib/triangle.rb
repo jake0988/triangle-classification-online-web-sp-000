@@ -7,8 +7,17 @@ class Triangle
   @three = three
   end
 
-  def length
-    array = [@one, @two, @three]
+  def check_length
+    if @one + @two < @three || @one > @two + @three || @one + @three < @two
+      return false
+    elsif @one <= 0 || @two <= 0 || @three <= 0
+      return false
+      ene
   end
 
+  def kind
+    array = [@one, @two, @three]
+    array.each_with_index.sort {|i| i }
+  end
+end
 end

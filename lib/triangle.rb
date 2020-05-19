@@ -9,6 +9,10 @@ class Triangle
   binding.pry
   end
 
+  def kind
+
+  end
+
   def check_length
     if @one + @two < @three || @one > @two + @three || @one + @three < @two
       return false
@@ -17,7 +21,7 @@ class Triangle
     end
   end
 
-  def kind
+  def kindy
     binding.pry
     array = [@one, @two, @three]
     array.each_with_index.sort {|i| i }

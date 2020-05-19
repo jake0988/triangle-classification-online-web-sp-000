@@ -1,4 +1,4 @@
-binding.pry
+binding 'pry'
 class Triangle
   attr_accessor :equilateral, :isosceles, :scalene
 

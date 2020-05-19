@@ -22,4 +22,3 @@ class Triangle
     array.each_with_index.sort {|i| i }
   end
 end
-end

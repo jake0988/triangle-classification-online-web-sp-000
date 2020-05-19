@@ -8,9 +8,12 @@ attr_accessor :one, :two, :three
   end
 
   def kind
+    array = [@one, @two, @three]
+    array.sort!
     if @one == @two && @two == @three
       return :equilateral
     end
+    if @one == @two &&
   end
   #
   # def check_length

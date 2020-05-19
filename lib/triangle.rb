@@ -8,6 +8,9 @@ attr_accessor :one, :two, :three
   end
 
   def kind
+    if @one + @two < @three || @one > @two + @three || @one + @three < @two
+      raise_error TriangleError =>
+    end
     array = [@one, @two, @three]
     array.sort!
     if @one == @two && @two == @three

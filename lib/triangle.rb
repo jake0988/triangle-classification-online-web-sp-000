@@ -1,7 +1,7 @@
 require 'pry'
 class Triangle
 attr_accessor :one, :two, :three
-  def initialization(one, two, three)
+  def initialize(one, two, three)
   @one = one
   @two = two
   @three = three
@@ -13,7 +13,7 @@ attr_accessor :one, :two, :three
       return :equilateral
     end
   end
-  # 
+  #
   # def check_length
   #   if @one + @two < @three || @one > @two + @three || @one + @three < @two
   #     return false

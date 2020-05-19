@@ -21,11 +21,11 @@ attr_accessor :one, :two, :three
     return :scalene
   end
 
-  class TriangleError < StandardError
 
-  end
 end
-  #
+class TriangleError < StandardError
+
+end
   # def check_length
   #   if @one + @two < @three || @one > @two + @three || @one + @three < @two
   #     return false

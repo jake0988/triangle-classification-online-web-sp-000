@@ -5,7 +5,6 @@ attr_accessor :one, :two, :three
   @one = one
   @two = two
   @three = three
-  binding.pry
   end
 
   def kind

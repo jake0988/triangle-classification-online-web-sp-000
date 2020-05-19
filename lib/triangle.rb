@@ -14,6 +14,7 @@ class Triangle
     elsif @one <= 0 || @two <= 0 || @three <= 0
       return false
       binding.pry
+    end
   end
 
   def kind

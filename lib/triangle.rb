@@ -10,6 +10,8 @@ attr_accessor :one, :two, :three
   def kind
     if @one + @two < @three || @one > @two + @three || @one + @three < @two
       raise TriangleError
+    elsif @one <= 0 || @two <= 0 || @three <= 0
+      raise TriangleError
     end
     array = [@one, @two, @three]
     array.sort!

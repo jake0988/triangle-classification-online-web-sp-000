@@ -1,3 +1,4 @@
+binding.pry
 class Triangle
   attr_accessor :equilateral, :isosceles, :scalene
 
@@ -12,7 +13,7 @@ class Triangle
       return false
     elsif @one <= 0 || @two <= 0 || @three <= 0
       return false
-      ene
+      binding.pry
   end
 
   def kind

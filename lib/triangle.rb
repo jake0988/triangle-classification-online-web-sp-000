@@ -14,8 +14,8 @@ attr_accessor :one, :two, :three
       return :equilateral
   elsif array[0] == array[1] && array[1] != array[2] || array[0] != array[1] && array[1] == array[2]
       return :isosceles
-  elsif
-
+  elsif array[0] != array[1] && array[1] != array[2] && array[0] != array[2]
+    return :scalene
   end
   #
   # def check_length

@@ -1,6 +1,6 @@
 require 'pry'
 class Triangle
-  
+
   def initialization(one, two, three)
   @one = one
   @two = two
@@ -9,7 +9,9 @@ class Triangle
   end
 
   def kind
-
+    if @one == @two == @three
+      return :equilateral
+    end
   end
 
   def check_length

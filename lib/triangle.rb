@@ -13,12 +13,12 @@ class Triangle
       return false
     elsif @one <= 0 || @two <= 0 || @three <= 0
       return false
-      binding.pry
     end
   end
 
   def kind
     array = [@one, @two, @three]
     array.each_with_index.sort {|i| i }
+    binding.pry
   end
 end

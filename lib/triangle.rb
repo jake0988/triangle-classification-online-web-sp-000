@@ -7,7 +7,7 @@ attr_accessor :one, :two, :three
   @three = three
   end
 
-  def kind  
+  def kind
     array = [@one, @two, @three]
     array.sort!
     if @one == @two && @two == @three
@@ -18,6 +18,9 @@ attr_accessor :one, :two, :three
     return :scalene
   end
 
+  class TriangleError < StandardError
+
+  end
 end
   #
   # def check_length

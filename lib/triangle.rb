@@ -7,12 +7,7 @@ attr_accessor :one, :two, :three
   @three = three
   end
 
-  def kind
-    if @one + @two < @three || @one > @two + @three || @one + @three < @two
-        return false
-      elsif @one <= 0 || @two <= 0 || @three <= 0
-        return false
-      end
+  def kind  
     array = [@one, @two, @three]
     array.sort!
     if @one == @two && @two == @three
@@ -22,6 +17,7 @@ attr_accessor :one, :two, :three
   elsif array[0] != array[1] && array[1] != array[2] && array[0] != array[2]
     return :scalene
   end
+
 end
   #
   # def check_length

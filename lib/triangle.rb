@@ -6,6 +6,7 @@ class Triangle
   @one = one
   @two = two
   @three = three
+  binding.pry
   end
 
   def check_length

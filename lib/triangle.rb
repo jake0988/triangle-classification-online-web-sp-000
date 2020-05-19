@@ -1,7 +1,7 @@
 require 'pry'
 class Triangle
 attr_accessor :one, :two, :three
-  def initialization
+  def initialization(one, two, three)
   @one = one
   @two = two
   @three = three

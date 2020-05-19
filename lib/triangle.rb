@@ -17,6 +17,7 @@ attr_accessor :one, :two, :three
   elsif array[0] != array[1] && array[1] != array[2] && array[0] != array[2]
     return :scalene
   end
+end
   #
   # def check_length
   #   if @one + @two < @three || @one > @two + @three || @one + @three < @two

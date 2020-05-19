@@ -8,7 +8,7 @@ attr_accessor :one, :two, :three
   end
 
   def kind
-    if @one + @two <= @three || @one >= @two + @three || @one + @three <= @two ||
+    if @one + @two <= @three || @one >= @two + @three || @one + @three <= @two
       raise TriangleError
     elsif @one <= 0 || @two <= 0 || @three <= 0
       raise TriangleError

@@ -12,8 +12,10 @@ attr_accessor :one, :two, :three
     array.sort!
     if @one == @two && @two == @three
       return :equilateral
-    end
-    if @one == @two &&
+  elsif array[0] == array[1] && array[1] != array[2] || array[0] != array[1] && array[1] == array[2]
+      return :isosceles
+  elsif
+
   end
   #
   # def check_length

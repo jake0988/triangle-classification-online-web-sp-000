@@ -17,6 +17,7 @@ class Triangle
   end
 
   def kind
+    binding.pry
     array = [@one, @two, @three]
     array.each_with_index.sort {|i| i }
     binding.pry

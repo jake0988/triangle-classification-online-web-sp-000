@@ -8,6 +8,11 @@ attr_accessor :one, :two, :three
   end
 
   def kind
+    if @one + @two < @three || @one > @two + @three || @one + @three < @two
+        return false
+      elsif @one <= 0 || @two <= 0 || @three <= 0
+        return false
+      end
     array = [@one, @two, @three]
     array.sort!
     if @one == @two && @two == @three
